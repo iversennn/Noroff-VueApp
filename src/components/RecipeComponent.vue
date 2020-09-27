@@ -1,5 +1,5 @@
-<template class="card">
-        <div class="card">
+<template>
+        <div class="card-info">
           <img :src="recipeImg" />
           <p>Title: </p>{{title}}
           <p>Ingredients: </p>{{ingredients}}
@@ -15,9 +15,7 @@ export default {
 </script>
 
 <style>
-.card{
-  display: inline-block;
-  width: 400px;
-  border: 2px solid black;
+.card-info{
+  padding: 20px;
 }
 </style>
