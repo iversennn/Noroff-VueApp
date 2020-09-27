@@ -3,7 +3,7 @@
           <img :src="recipeImg" class="img"/>
           <p>Title:{{title}} </p>
           <p>Ingredients: {{ingredients}}</p>
-          <p>Company Website: </p><a :href="website" target="_blank">Click Here for recipe</a> 
+          <a class="link" rel="noreferrer noopener" :href="website" target="_blank">Click Here for recipe</a> 
         </div>
 </template>
 
@@ -20,5 +20,9 @@ export default {
 }
 .img{
   border-radius: 15px;
+}
+.link:hover{
+  background:black;
+  color: white;
 }
 </style>
